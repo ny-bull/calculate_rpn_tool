@@ -2,6 +2,7 @@ use anyhow::{bail, ensure, Context, Result};
 use clap::{ArgAction, Parser};
 use std::fs::File;
 use std::io::{stdin, BufRead, BufReader};
+use std::path::PathBuf;
 
 struct RpnCalculator(bool);
 
@@ -61,7 +62,7 @@ struct Opts {
     verbose: bool,
 
     //formulas written in RPN
-    formula_file: Option<String>,
+    formula_file: Option<PathBuf>,
 }
 
 pub fn derive() {

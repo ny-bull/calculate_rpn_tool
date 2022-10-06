@@ -1,5 +1,5 @@
 [package]
-name = "samplecli"
+name = "rpncalc"
 version = "0.1.0"
 edition = "2021"
 
@@ -11,5 +11,5 @@ clap = {version = "4.0.9",features = ["derive"]}
 thiserror = "1.0.37"
 
 [[bin]]
-name = "main_1"
+name = "main"
 path = "src/main.rs"
